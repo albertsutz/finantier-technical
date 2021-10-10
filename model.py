@@ -44,8 +44,8 @@ my_model_1 = xgb.XGBRegressor(random_state=0)
 my_model_1.fit(OH_X, y)
 
 import joblib
-joblib.dump(my_model_1, 'model.pkl')
+joblib.dump(my_model_1, 'deploy/model.pkl')
 print("Model dumped!")
 
-joblib.dump(OH_encoder, "encoder")
+joblib.dump(OH_encoder, "deploy/encoder")
 print("encoder dumped!")
